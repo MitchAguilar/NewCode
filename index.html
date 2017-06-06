@@ -22,30 +22,54 @@
   <meta property="og:url" content="https://mitchaguilar.github.io/NewCode/" />
   <meta property="article:published_time" content="2017-04-3T19:14:37.804Z" />
   <meta property="article:modified_time" content="2017-04-3T15:39:06.058Z" />
+
+  <!--talbles-->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/bootstrap/js/jquery-2.2.3.min.js"></script>
+	<script src="assets/bootstrap/js/jquery-ui.js"></script>
+	<script src="assets/bootstrap/js/jquery-ui.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <!--<div style="visibility: hidden">
-  <audio src="assets/vid.mp3" preload="auto" id="audio" autoplay></audio>
+  <section>
+		<ul class="sortable grid">
+			<li class="form-control">STEFANY</li>
+			<li class="form-control">DANNA</li>
+			<li class="form-control">YEISSON</li>
+			<li class="form-control">JONATHAN</li>
+			<li class="form-control">GUILLERMO</li>
+			<li class="form-control">OSCAR</li>
+      <li class="form-control">JUAN CAMILO</li>
+			<li class="form-control">KEVIN ERNEY</li>
+			<li class="form-control">J CAMILO</li>
+			<li class="form-control">J DAVID</li>
+			<li class="form-control">J PABLO</li>
+			<li class="form-control">BRAYAN</li>
+		</ul>
+	</section>
+  <div style="visibility: hidden">
    </div>
   <div id="app"></div>
   <script src="public/build.js"></script>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-76791112-3', 'auto');
-    ga('send', 'pageview');
-  </script>-->
+  <!--tables code-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="assets/Sorter/jquery.sortable.js"></script>
+	<script>
+		$(function() {
+			$('.sortable').sortable();
+			$('.handles').sortable({
+				handle: 'span'
+			});
+			$('.connected').sortable({
+				connectWith: '.connected'
+			});
+			$('.exclude').sortable({
+				items: ':not(.disabled)'
+			});
+		});
+	</script>
 </body>
-
 </html>

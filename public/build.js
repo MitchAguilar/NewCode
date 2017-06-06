@@ -127,7 +127,7 @@
 	  return Main;
 	}(_react2.default.Component);
 
-	_reactDom2.default.render(_react2.default.createElement(Main, null), document.getElementById('app'));
+	//ReactDOM.render(<Main />, document.getElementById('app'));
 
 /***/ }),
 /* 1 */
