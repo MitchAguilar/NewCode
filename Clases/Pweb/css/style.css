@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6
 }
 .main-header
 {
-	background: url(../img/banner.jpeg) no-repeat;
+	background: url(http://noticias.universia.es/net/images/practicas-empleo/q/qu/qui/quiero-ser-desarrollador-de-software.jpg) no-repeat;
 	background-size: cover;
 	min-height: 610px;
 }
